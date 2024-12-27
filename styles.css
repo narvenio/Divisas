@@ -1,0 +1,114 @@
+.body{
+    padding: 0;
+}
+
+.logo{
+    height: 70px;
+}
+
+.custom-select{
+    position: relative;
+    width: 300px;
+}
+
+.selected-option{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.selected-option img{
+    width: 50px;
+    height: 35px;
+    margin-right: 10px;
+}
+.dropdown-icon {
+    margin-left: auto;
+    font-size: 12px;
+  }
+
+.options{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    z-index: 20;
+    max-height: 200px;
+    overflow-y: auto;
+    transition: 0.2s;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+.option img{
+    width: 50px;
+    height: 35px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.option:hover{
+    background-color: #f0f0f0;
+}
+.dropdown-icon{
+    margin-left: auto;
+    font-size: 15px;
+}
+
+.header{
+    background-color: #f9f788;
+    /*background-color: #ffd671;*/
+}
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.anclas{
+    text-decoration: none;
+    font-size: 22px;
+    list-style: none;
+}
+
+.convertidor{
+    margin-top: 10em;
+    text-align: center;
+    
+}
+
+option {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px; /* Espacio para las imágenes */
+    white-space: nowrap; /* Evita que el texto se desborde */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es muy largo */
+  }
+
+option[value="EURO"]{
+    background-image: url('https://flagcdn.com/w40/us.png');
+}
+
+.convertir {
+    font-size: 2em;
+    border: none;
+    border-radius: 50px;
+    background-color: #99f7ff;
+    color: white;
+    padding: 0px 20px 10px;
+}
