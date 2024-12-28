@@ -136,7 +136,7 @@ async function convertir() {
     if (montoConvertido === null) {
         document.getElementById("resultado").textContent = "Error: No se pudo realizar la conversión.";
     } else {
-        document.getElementById("resultado").textContent = `Monto Convertido: ${montoConvertido.toFixed(2)}`;
+        document.getElementById("resultado").textContent = `Monto Convertido: ${montoConvertido}`;
         console.log(`Monto convertido:`, montoConvertido);
 }
 }
