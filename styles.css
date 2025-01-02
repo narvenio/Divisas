@@ -47,12 +47,29 @@
     transition: 0.2s;
 }
 
-.option {
+#monto{
+    text-align: center;
+    padding: 10px;
+}
+
+#monedaOrigen{
+    text-align: center;
+    padding: 10px;
+    
+}
+
+#monedaDestino{
+    text-align: center;
+    padding: 10px;
+}
+
+.option{
     display: flex;
     align-items: center;
     padding: 10px;
     cursor: pointer;
   }
+
 .option img{
     width: 50px;
     height: 35px;
@@ -91,24 +108,16 @@
     
 }
 
-option {
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 30px; /* Espacio para las imágenes */
-    white-space: nowrap; /* Evita que el texto se desborde */
-    overflow: hidden;
-    text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es muy largo */
-  }
-
-option[value="EURO"]{
-    background-image: url('https://flagcdn.com/w40/us.png');
-}
-
 .convertir {
     font-size: 2em;
     border: none;
     border-radius: 50px;
-    background-color: #99f7ff;
+    background-color: #f7e710;
+    /*background-color: #99f7ff;*/
     color: white;
     padding: 0px 20px 10px;
+}
+
+#resultado{
+    font-size: 1.3rem;
 }
