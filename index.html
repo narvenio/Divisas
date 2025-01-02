@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Moneda</title>
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    
+</head>
+<body>
+
+    <header class="header"> 
+        <div class="container">
+            <nav class="navegacion">
+                <img src="https://cdn-icons-png.flaticon.com/512/5480/5480445.png" alt="" srcset="" class="logo">
+                <div class="anclas">
+                    <a href="#" class="text-decoration-none" style="color: #ffbd1b;"><b>Calcular Divisas</b></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+<div class="convertidor">
+<select id="monedaOrigen">
+        <option value="USD">Dolar Estadounidense</option>
+        <option value="Euro">Euro</option>
+        <option value="Libra Esterlina">Libra Esterlina</option>
+        <option value="Yen Japones">Yen Japones</option>
+        <option value="Bolivar Venezolano Oficial">Bolivar Venezolano Oficial</option>
+        <option value="Bolivar Venezolano Paralelo">Bolivar Venezolano Paralelo</option>
+        <option value="Renmbi Chino">Renmbi Chino</option>
+        <option value="Peso Argentino">Peso Argentino</option>
+        <option value="Peso Chileno">Peso Chileno</option>
+        <option value="Peso Colombiano">Peso Colombiano</option>
+        <option value="Peso Mexicano">Peso Mexicano</option>
+        <option value="Dolar Canadiense">Dolar Canadiense</option>
+        <option value="Sol Peruano">Sol Peruano</option>
+        <option value="Bolivianos">Bolivianos</option>
+        <option value="Guaranis">Guaranis</option>
+        <option value="Peso Dominicano">Peso Dominicano</option>
+        <option value="Lempira Hondureño">Lempira Hondureño</option>
+        <option value="Córdoba">Córdoba</option>
+        <option value="Colón Costarricense">Colón Costarricense</option>
+        <option value="Won Surcoreano">Won Surcoreano</option>
+        <option value="Nuevo Dolar Taiwanes">Nuevo Dolar Taiwanes</option>
+        <!--<option value="Euro">Euro</option>
+        <option value="Euro">Euro</option>
+        <option value="Euro">Euro</option>
+        <option value="Euro">Euro</option>
+        <option value="Euro">Euro</option>
+        <option value="Euro">Euro</option>
+        <option value="Euro">Euro</option>
+        <option value="Euro">Euro</option>
+        <option value="Euro">Euro</option>
+        <option value="Euro">Euro</option>
+        <option value="Euro">Euro</option>-->
+        <option value="Corona Sueca">Corona Sueca</option>
+        <option value="Corona Danesa">Corona Danesa </option>
+        <option value="Franco Suizo">Franco Suizo</option>
+        <option value="Corona Noruega">Corona Noruega</option>
+        <option value="Zloty Polaco">Zloty Polaco</option>
+        <option value="Forinto Hungaro">Forinto Hungaro</option>
+        <option value="Corona Checa">Corona Checa</option>
+        <option value="Leu Rumano">Leu Rumano</option>
+        <option value="Lev Búlgaro">Lev Búlgaro</option>
+        <!--<option value="Euro">Euro</option>-->
+        <option value="Dinar Serbio">Dinar Serbio</option>
+        <option value="Rublo Ruso">Rublo Ruso</option>
+        <option value="Grivna Ucraniano">Grivna Ucraniano</option>
+        <option value="Libra Egipcia">Libra Egipcia</option>
+        <option value="Dinar Iraquí">Dinar Iraquí</option>
+        <option value="Dinar Jordano">Dinar Jordano</option>
+        <option value="Libra Libanesa">Libra Libanesa</option>
+        <option value="Dirham de los Emiratos">Dirham de los Emiratos</option>
+        <option value="Dólar de Hong Kong">Dólar de Hong Kong</option>
+        <option value="Pataca de Macao">Pataca de Macao</option>
+        <option value="Baht Tailandés">Baht Tailandés</option>
+        <option value="Dong Vietnamita">Dong Vietnamita</option>
+        <option value="Kip Laosiano">Kip Laosiano</option>
+        <option value="Riel Camboyano">Riel Camboyano</option>
+        <option value="Dólar de Singapur">Dólar de Singapur</option>
+        <option value="Lira Turca">Lira Turca</option>
+        <option value="Rial Iraní">Rial Iraní</option>
+        <option value="Nuevo Shequel Israelí">Nuevo Shequel Israelí</option>
+      
+        
+    </select>
+    <input type="number" id="monto" placeholder="Ingresa el Monto">
+<select id="monedaDestino">
+
+    <option value="USD">Dolar Estadounidense</option>
+        <option value="Euro">Euro</option>
+        <option value="Libra Esterlina">Libra Esterlina</option>
+        <option value="Yen Japones">Yen Japones</option>
+    <option value="Bolivar Venezolano Oficial">Bolivar Venezolano Oficial</option>
+        <option value="Bolivar Venezolano Paralelo">Bolivar Venezolano Paralelo</option>
+        <option value="Renmbi Chino">Renmbi Chino</option>
+        <option value="Peso Argentino">Peso Argentino</option>
+        <option value="Peso Chileno">Peso Chileno</option>
+        <option value="Peso Colombiano">Peso Colombiano</option>
+        <option value="Peso Mexicano">Peso Mexicano</option>
+        <option value="Dolar Canadiense">Dolar Canadiense</option>
+        <option value="Sol Peruano">Sol Peruano</option>
+        <option value="Bolivianos">Bolivianos</option>
+        <option value="Guaranis">Guaranis</option>
+        <option value="Peso Dominicano">Peso Dominicano</option>
+        <option value="Lempira Hondureño">Lempira Hondureño</option>
+        <option value="Córdoba">Córdoba</option>
+        <option value="Colón Costarricense">Colón Costarricense</option>
+        <option value="Won Surcoreano">Won Surcoreano</option>
+        <option value="Nuevo Dolar Taiwanes">Nuevo Dolar Taiwanes</option>
+<!--<option value="Euro">Euro</option>
+        <option value="Euro">Euro</option>
+        <option value="Euro">Euro</option>
+        <option value="Euro">Euro</option>
+        <option value="Euro">Euro</option>
+        <option value="Euro">Euro</option>
+        <option value="Euro">Euro</option>
+        <option value="Euro">Euro</option>
+        <option value="Euro">Euro</option>
+        <option value="Euro">Euro</option>
+        <option value="Euro">Euro</option>-->
+        <option value="Corona Sueca">Corona Sueca</option>
+        <option value="Corona Danesa">Corona Danesa </option>
+        <option value="Franco Suizo">Franco Suizo</option>
+        <option value="Corona Noruega">Corona Noruega</option>
+        <option value="Zloty Polaco">Zloty Polaco</option>
+        <option value="Forinto Hungaro">Forinto Hungaro</option>
+        <option value="Corona Checa">Corona Checa</option>
+        <option value="Leu Rumano">Leu Rumano</option>
+        <option value="Lev Búlgaro">Lev Búlgaro</option>
+<!--<option value="Euro">Euro</option>-->
+        <option value="Dinar Serbio">Dinar Serbio</option>
+        <option value="Rublo Ruso">Rublo Ruso</option>
+        <option value="Grivna Ucraniano">Grivna Ucraniano</option>
+        <option value="Libra Egipcia">Libra Egipcia</option>
+        <option value="Dinar Iraquí">Dinar Iraquí</option>
+        <option value="Dinar Jordano">Dinar Jordano</option>
+        <option value="Libra Libanesa">Libra Libanesa</option>
+        <option value="Dirham de los Emiratos">Dirham de los Emiratos</option>
+        <option value="Dólar de Hong Kong">Dólar de Hong Kong</option>
+        <option value="Pataca de Macao">Pataca de Macao</option>
+        <option value="Baht Tailandés">Baht Tailandés</option>
+        <option value="Dong Vietnamita">Dong Vietnamita</option>
+        <option value="Kip Laosiano">Kip Laosiano</option>
+        <option value="Riel Camboyano">Riel Camboyano</option>
+        <option value="Dólar de Singapur">Dólar de Singapur</option>
+        <option value="Lira Turca">Lira Turca</option>
+        <option value="Rial Iraní">Rial Iraní</option>
+        <option value="Nuevo Shequel Israelí">Nuevo Shequel Israelí</option>
+    </select>
+
+    <br><br>
+    <button onclick="convertir()" class="convertir"><b>Convertir</b></button><br><br>
+    <p id="resultado"></p>
+</div>
+ <script src="codigo.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.0/js/select2.min.js"></script>
+  
+</body>
+</html>
