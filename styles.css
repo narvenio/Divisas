@@ -121,3 +121,15 @@
 #resultado{
     font-size: 1.3rem;
 }
+@media screen and (max-width: 800px){
+    #monedaOrigen{
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 15px;
+        
+    }
+
+    #monedaDestino{
+        margin-top: 15px;
+    }
+}
